@@ -3,7 +3,7 @@ if __name__ == '__main__':
     from calculator_1 import add, sub, mul, div
     import sys
     sym = str(sys.argv[2])
-    if len(sys.argv) < 3:
+    if len(sys.argv) <= 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
     elif sym != "+" and sym != "-" and sym != "*" and sym != "/":
