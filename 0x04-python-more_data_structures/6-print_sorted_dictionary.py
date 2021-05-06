@@ -5,5 +5,3 @@ def print_sorted_dictionary(a_dictionary):
 
         for key in alpha:
             print(key, ':', a_dictionary[key])
-    else:
-        print(a_dictionary)
