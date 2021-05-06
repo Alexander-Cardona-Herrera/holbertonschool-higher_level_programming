@@ -6,7 +6,7 @@ def only_diff_elements(set_1, set_2):
     else:
         if not set_1:
             return set_2
-        elif not set_1:
+        elif not set_2:
             return set_1
         else:
             return []
