@@ -2,5 +2,5 @@
 
 
 class Square:
-    """a square"""
-    pass
+    def __init__(self) -> None:
+        pass
