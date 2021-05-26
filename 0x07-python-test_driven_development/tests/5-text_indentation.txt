@@ -12,7 +12,7 @@ This is an example text file in reStructuredText format.  First import
 Now use it:
 
     >>> text_indentation("")
-    <BLANKLINE>
+    
 
     >>> text_indentation(4)
     Traceback (most recent call last):
