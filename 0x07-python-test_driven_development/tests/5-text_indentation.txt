@@ -36,7 +36,7 @@ Now use it:
     <BLANKLINE>
     .
     <BLANKLINE>
-     Alex
+    Alex
 
     >>> text_indentation("Ander::: Ander")
     Ander:
@@ -45,7 +45,7 @@ Now use it:
     <BLANKLINE>
     :
     <BLANKLINE>
-     Ander
+    Ander
 
     >>> text_indentation("Alex", "Ander")
     Traceback (most recent call last):
