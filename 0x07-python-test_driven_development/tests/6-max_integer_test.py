@@ -9,6 +9,8 @@ class TestStringMethods(unittest.TestCase):
     def test_max(self):
         self.assertEqual(max_integer([1, 3, 23]), 23)
         self.assertEqual(max_integer([-1, -3, -23]), -1)
+        self.assertEqual(max_integer([-1, -0.5, -23]), -0.5)
+        self.assertEqual(max_integer([-1]), -1)
 
     def test_list(self):
         self.assertIsNone(max_integer([]))
