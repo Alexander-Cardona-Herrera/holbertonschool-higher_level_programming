@@ -10,5 +10,5 @@ def write_file(filename="", text=""):
     """
     Function that writes over a file
     """
-    with open(filename, "w+", encoding="UTF-8") as f:
-           return f.write(text)
+    with open(filename, mode="w+", encoding="UTF-8") as f:
+        return f.write(text)
