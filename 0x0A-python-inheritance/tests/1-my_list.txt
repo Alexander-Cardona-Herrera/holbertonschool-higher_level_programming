@@ -1,13 +1,13 @@
 The ``1-my_list.py`` module
 ======================
 
-Using ``my_list``
+Using ``My_list``
 -------------------
 
 This is an example text file in reStructuredText format.  First import
-``my_list`` from the ``my_list`` module:
+``My_list`` from the ``My_list`` module:
 
-    >>> my_list = __import__("1-my_list").my_list
+    >>> My_list = __import__("1-my_list").My_list
 
 Now use it:
 
@@ -36,5 +36,4 @@ Now use it:
     # Checking pep8 style
     >>> import os
     >>> os.popen("pep8 1-my_list.py").read()
-    ''
-
+    "
