@@ -1,17 +1,40 @@
 The ``7-base_geometry.py`` module
 ======================
 
-Using ``integer_validator``
+Using ``BaseGeometry``
 -------------------
 
 This is an example text file in reStructuredText format.  First import
-``integer_validator`` from the ``integer_validator`` module:
+``BaseGeometry`` from the ``BaseGeometry`` module:
 
-    >>> integer_validator = __import__("7-base_geometry").integer_validator
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 Now use it:
 
-    >>> bg.integer_validator("name", "John")
-    [TypeError] name must be an integer
-    [ValueError] age must be greater than 0
-    [ValueError] distance must be greater than 0
+    # Checking if README is empty
+    >>> import os
+    >>> pathfile = os.getcwd() + 'README.md'
+    >>> os.stat('README.md').st_size == 0
+    False
+    
+    # Checking (shebang)
+    >>> with open('1-my_list.py', "r") as file:
+    ...     first_line = file.readline()
+    >>> first_line == '#!/usr/bin/python3\n'
+    True
+    
+    # Checking comments
+    >>> comments = __import__('1-my_list').__doc__
+    >>> len(comments) > 4
+    True
+    
+    # Checking comments (after)
+    >>> comments = __import__('1-my_list').__doc__
+    >>> len(comments) > 2
+    True
+    
+    # Checking pep8 style
+    >>> import os
+    >>> os.popen("pep8 1-my_list.py").read()
+    ''
+
