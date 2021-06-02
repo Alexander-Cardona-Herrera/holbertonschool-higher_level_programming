@@ -1,0 +1,17 @@
+The ``7-base_geometry.py`` module
+======================
+
+Using ``integer_validator``
+-------------------
+
+This is an example text file in reStructuredText format.  First import
+``integer_validator`` from the ``integer_validator`` module:
+
+    >>> integer_validator = __import__("7-base_geometry").integer_validator
+
+Now use it:
+
+    >>> bg.integer_validator("name", "John")
+    [TypeError] name must be an integer
+    [ValueError] age must be greater than 0
+    [ValueError] distance must be greater than 0
