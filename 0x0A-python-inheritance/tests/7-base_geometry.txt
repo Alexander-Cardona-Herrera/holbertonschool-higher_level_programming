@@ -28,9 +28,10 @@ Now use it:
     >>> len(comments) > 4
     True
     
-    # Checking comments (after)
-    >>> comments = __import__('1-my_list').__doc__
-    >>> len(comments) > 2
+    # Check for function comments
+    >>> import re
+    >>>	comments = (BaseGeometry.__doc__)
+    >>> len(comments.splitlines()) > 2
     True
     
     # Checking pep8 style
