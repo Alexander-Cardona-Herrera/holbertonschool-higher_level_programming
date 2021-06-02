@@ -1,0 +1,17 @@
+The ``1-my_list.py`` module
+======================
+
+Using ``my_list``
+-------------------
+
+This is an example text file in reStructuredText format.  First import
+``my_list`` from the ``my_list`` module:
+
+    >>> my_list = __import__("1-my_list").my_list
+
+Now use it:
+
+    >>> mylist.sorted([1, 3, 2])
+    [1, 2, 3]
+    
+
