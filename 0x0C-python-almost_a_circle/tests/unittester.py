@@ -2,9 +2,9 @@
 """Unittest for max_integer([..])
 """
 import unittest
-** = __import__('*').**
+*** = __import__('***').***
 
-class TestStringMethods(unittest.TestCase):
+class Test***(unittest.TestCase):
     
     def test_max(self):
         self.assertEqual()
