@@ -60,12 +60,12 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """Method to load from a json file."""
-        if cls is None:
-            empty_list = []
-            return empty_list
-        new_list = []
-        with open(cls.__name__ + ".json", "r") as f:
-            json_list = cls.from_json_string(f.read())
-            for i in json_list:
-                new_list.append(cls.create(**i))
+        try:
+            new_list = []
+            with open(cls.__name__ + ".json", "r") as f:
+                json_list = cls.from_json_string(f.read())
+                for i in json_list:
+                    new_list.append(cls.create(**i))
+        except:
+            return []
         return new_list
