@@ -6,11 +6,9 @@ from models.base import Base
 
 class TestBase(unittest.TestCase):
     
-    def test_max(self):
-        pass
+    def test_id(self):
+        b1 = Base()
+        self.assertEqual(b1.id, 1)
 
-    def test_list(self):
-        pass
-
-    def test_type(self):
-        pass
+if __name__ == '__main__':
+    unittest.main()

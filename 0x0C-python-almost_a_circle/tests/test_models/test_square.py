@@ -6,11 +6,13 @@ from models.square import Square
 
 class TestSquare(unittest.TestCase):
     
-    def test_max(self):
-        pass
+    def test_id(self):
+        r1 = Square(10, 2, 0, 12)
+        self.assertEqual(r1.id, 12)
 
-    def test_list(self):
-        pass
+        r1 = Square(10)
+        self.assertEqual(r1.id, 3)
 
-    def test_type(self):
-        pass
+
+if __name__ == '__main__':
+    unittest.main()

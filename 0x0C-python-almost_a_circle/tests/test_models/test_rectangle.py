@@ -6,11 +6,11 @@ from models.rectangle import Rectangle
 
 class TestRectangle(unittest.TestCase):
     
-    def test_max(self):
-        pass
+    def test_id(self):
+        r1 = Rectangle(10, 2, 0, 0, 12)
+        self.assertEqual(r1.id, 12)
 
-    def test_list(self):
-        pass
-
-    def test_type(self):
-        pass
+        r1 = Rectangle(10, 2)
+        self.assertEqual(r1.id, 2)
+if __name__ == '__main__':
+    unittest.main()
