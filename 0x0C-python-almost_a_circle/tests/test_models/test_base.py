@@ -2,15 +2,15 @@
 """Unittest for max_integer([..])
 """
 import unittest
-*** = __import__('***').***
+from models.base import Base
 
-class Test***(unittest.TestCase):
+class TestBase(unittest.TestCase):
     
     def test_max(self):
-        self.assertEqual()
+        pass
 
     def test_list(self):
-        self.assertIsNone()
+        pass
 
     def test_type(self):
-        self.assertIsInstance()
+        pass
