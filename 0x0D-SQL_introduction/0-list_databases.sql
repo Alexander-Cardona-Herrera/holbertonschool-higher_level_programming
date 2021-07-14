@@ -1,0 +1,2 @@
+-- comentario
+SHOW DATEBASES;
