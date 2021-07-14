@@ -1,2 +1,2 @@
 -- abot SHOW
-SHOW CREATED first_table;
+SHOW CREATE first_table;
