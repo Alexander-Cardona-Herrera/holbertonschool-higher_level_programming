@@ -1,0 +1,2 @@
+-- about TABLES
+SHOW TABLES;
