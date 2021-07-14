@@ -1,2 +1,2 @@
 -- comentario
-SHOW DATEBASES;
+SHOW DATABASES;
