@@ -1,13 +1,16 @@
 #!/usr/bin/python3
 """
+0-select_states file
 
 
 """
+
 import MySQLdb
 from sys import argv
 
 if __name__ == '__main__':
-
+    """ The file is not executed when imported
+    """
     conn = MySQLdb.connect(host="localhost", port=3306,
                            user=argv[1], passwd=argv[2],
                            db=argv[3], charset="utf8")
