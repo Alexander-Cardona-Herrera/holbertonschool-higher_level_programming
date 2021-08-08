@@ -3,8 +3,8 @@
 """
 from sqlalchemy import (create_engine)
 import sys
-from model_state import Base, State
-from model_city import City
+from relationship_state import Base, State
+from relationship_city import City
 from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
@@ -15,12 +15,10 @@ if __name__ == "__main__":
     Session = sessionmaker(engine)
     session = Session()
 
-    count = 1
-    for states, cities in session.query(State, City)\
-            .filter(State.id == City.state_id).all():
-        if(count == states.id):
-            print("{}: {}".format(states.id, states.name))
-            count = count + 1
-        print("\t{}: {}".format(cities.id, cities.name))
+    for state in session.query(State).\
+            order_by(State.id):
+        print('{}: {}'.format(state.id, state.name))
+        for city in state.cities:
+            print('\t{}: {}'.format(city.id, city.name))
 
     session.close()
