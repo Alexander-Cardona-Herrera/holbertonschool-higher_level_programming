@@ -1,22 +1,18 @@
 #!/usr/bin/python3
-"""
-model_state file
+""" Creating the class definition of a state """
 
-
-"""
-
-from sqlalchemy import Column, Integer, String
-from sqlalchemy.orm import relationship
+from sqlalchemy.orm import relationship, backref
 from sqlalchemy.ext.declarative import declarative_base
-
+from sqlalchemy import Column, Integer, String
 Base = declarative_base()
 
 
 class State(Base):
-    """ Class State inherited from Base. """
+    """Creating state class inherintace of Base"""
 
     __tablename__ = 'states'
-    id = Column(Integer, nullable=False, primary_key=True)
+    id = Column(Integer, primary_key=True,
+                nullable=False)
     name = Column(String(128), nullable=False)
     cities = relationship("City", backref=("state"), cascade="all, delete",
                           passive_deletes=True)
