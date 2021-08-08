@@ -5,7 +5,8 @@ from sqlalchemy import (create_engine)
 import sys
 from relationship_state import Base, State
 from relationship_city import Base, City
-from sqlalchemy.orm import sessionmaker, relationship, state
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import relationship, state
 
 if __name__ == "__main__":
     engine = create_engine(

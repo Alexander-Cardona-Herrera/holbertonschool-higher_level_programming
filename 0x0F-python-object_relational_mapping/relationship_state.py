@@ -14,8 +14,9 @@ Base = declarative_base()
 
 class State(Base):
     """ Class State inherited from Base. """
+
     __tablename__ = 'states'
     id = Column(Integer, nullable=False, primary_key=True)
     name = Column(String(128), nullable=False)
-    cities = relationship('City', cascade='all, delete',
-                          backref=('state'), passive_deletes=True)
+    cities = relationship("City", backref=("state"), cascade="all, delete",
+                          passive_deletes=True)
