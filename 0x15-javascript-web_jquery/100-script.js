@@ -1,3 +1,4 @@
 /* Task 100 */
 
-document.querySelector('header').style.color = 'red';
+const elemento = document.querySelector('header');
+elemento.style.color = 'red';
