@@ -1,4 +1,6 @@
 /* Task 100 */
 
-const elemento = document.querySelector('header');
-elemento.style.color = 'red';
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('header').style.color = 'red';
+});
+
